@@ -1,0 +1,30 @@
+{
+  "name": "simple-news-api",
+  "version": "1.0.0",
+  "description": "Simple News API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon --inspect server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darwin911/simple-news-api.git"
+  },
+  "author": "Darwin Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darwin911/simple-news-api/issues"
+  },
+  "homepage": "https://github.com/darwin911/simple-news-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "puppeteer": "^13.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
