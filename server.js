@@ -22,8 +22,8 @@ app.post("/news", async (req, res) => {
     });
     const page = await browser.newPage();
     await page.goto(newsUrl, { waitUntil: "networkidle2" });
-    const title = await page.evaluate(() =>
-      Array.from(document.getElementsByTagName("h1")[0].textContent)
+    const title = await page.evaluate(
+      () => document.getElementsByTagName("h1")[0].textContent
     );
     const paragraphs = await page.evaluate(() =>
       Array.from(document.getElementsByTagName("p")).map(
