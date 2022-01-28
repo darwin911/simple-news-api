@@ -2,10 +2,10 @@
   "name": "simple-news-api",
   "version": "1.0.0",
   "description": "Simple News API",
-  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bin/server.js",
+    "build-ts": "tsc",
+    "start": "npm run build-ts && node bin/server.js",
     "dev": "nodemon --inspect bin/server.js"
   },
   "repository": {
