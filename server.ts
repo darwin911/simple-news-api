@@ -1,5 +1,4 @@
-import { Browser, HTTPRequest, HTTPResponse } from "puppeteer";
-
+import { Browser } from "puppeteer";
 import { Page } from "puppeteer";
 import express from "express";
 import puppeteer from "puppeteer";
